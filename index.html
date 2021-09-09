@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de JQuery Completo</title>
+
+    <style>
+        #botao1 {
+            width: 70px;
+            text-align: center;
+            background-color: royalblue;
+            border: 1px solid #c0c0c0;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        #botao2 {
+            width: 70px;
+            text-align: center;
+            background-color: seagreen;
+            border: 1px solid #c0c0c0;
+            cursor: pointer;
+
+        }
+
+        .fundovermelho {
+            background-color: #ff0000;
+        }
+        .focado {
+            background-color: #999;
+        }
+        .botao {
+            width: 150px;
+            height: 35px;
+            line-height: 35px;
+            background-color: #999;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .mouse-dentro {
+            background-color: #333;
+        }
+
+        .div {
+            width: 150px;
+            height: 150px;
+            background-color: #ddd;
+        }
+
+        .hellobar {
+            width: 100%;
+            height: 30px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: slateblue;
+        }
+        
+        .clica {
+            position: fixed;
+            top: 3px;
+            right: 50px;
+            color: #c0c0c0;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .div1 {
+            width: 200px;
+            height: 170px;
+            background-color: #eee;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!--<div id="teste">
+        <button>Botão</button>
+        <img src="http://www.google.com.br/google.jpg" alt="">
+    </div>
+    <br>
+    <input type="text" name="nome">
+
+    
+    <div class="site">
+        <div class="topo">
+            <div class="subtopo">
+                <span class="filha"></span>
+            </div>
+            <div class="conteudo"></div>
+            <div class="rodape"></div>
+        </div>
+    </div>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    
+    <h1>Título da página</h1>
+    
+    <label for="nome">Nome:</label>
+    
+    <button>Botão</button>
+    
+    <input type="text" name="nome" id="nome" di>
+    <br>
+    <br>
+    <label for="selecao"><input type="checkbox" name="selecao" id="selecao"> Salvar senha?</label>
+
+    <div id="logo">
+        
+        Esse é o texto
+        
+    </div>
+    <select name="idade" id="idade">
+        <option value="10">10 anos</option>
+        <option value="20">20 anos</option>
+        <option value="30">30 anos</option>
+        <option value="40">40 anos</option>
+    </select>
+    
+    <ul id="lista">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+        <li>Item 10</li>
+    </ul>
+
+    <button id="btn1">Botão 1</button>
+
+    <button id="btn2">Botão 2</button>
+    
+    <form method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" name="nome" id="nome"><br><br>
+        <input type="submit" id="botao" value="Enviar">
+    </form>
+
+    <div id="div" style="width:100px;height:200px;overflow-y:scroll;">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, totam unde enim quas consectetur, temporibus, magni dolore repellendus saepe voluptatem eum cum facilis sequi repellat voluptate quisquam dolorem est eaque!
+    </div>
+    
+
+    <form method="post" id="form">
+        <label for="nome">Nome:</label><br>
+        <input type="text" name="nome" id="nome"><br><br>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" name="email" id="email"><br><br>
+
+        <label for="idade">Idade:</label><br>
+        <select id="idade">
+            <option >10 anos</option>
+            <option >20 anos</option>
+            <option >30 anos</option>
+        </select><br><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    
+    <input type="text" name="nome" id="nome">
+    
+    <div class="hellobar"><span class="clica">x</span></div>
+
+    <div class="botao1">Botão 1</div>
+    <div class="botao2">Botão 2</div>
+
+    <div class="div"></div>
+    <div class="div1"></div>
+    <button>Ação</button>
+
+    <form method="POST" id="form">
+        <label for="usuario">Usuário:</label><br>
+        <input type="text" name="usuario" id="usuario"><br><br>
+
+        <label for="senha">Senha:</label><br>
+        <input type="password" name="senha" id="senha"><br><br>
+
+        <input type="submit" value="Entrar"><br><br>
+
+    </form>
+    -->
+    <form method="POST" id="form">
+        <label for="x">Número 1:</label><br>
+        <input type="text" name="x" id="x"><br><br>
+
+        <label for="y">Número 2:</label><br>
+        <input type="text" name="y" id="y"><br><br>
+
+        <input type="submit" value="Entrar"><br><br>
+    </form>
+    <div class="div"></div><br>
+
+    <button>Ação</button>
+
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="metodo-ajax.js"></script>
+</body>
+</html>
